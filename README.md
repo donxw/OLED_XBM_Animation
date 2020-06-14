@@ -29,7 +29,7 @@ GIMP has very good support for XBM file reading and writing.  It is also very wi
 
 ### Create your first frame
 
-Create a drawing of your own as your first frame.  To create the second frame start a new 32x32 file using the Pixel Art template above.  Copy the original image (Edit / Copy Visible).  To to the new blank frame and paste (Edit / Paste in place). Make small alterations to represent the second animation frame.  Repeat for as many frames as you need.
+Create a pixel drawing as a first frame.  To create the second frame start a new 32x32 file using the Pixel Art template above.  Copy the original image (Edit / Copy Visible).  To to the new blank frame and paste (Edit / Paste in place). Make small alterations to represent the second animation frame.  Repeat for as many frames as you need.
 
 ### Sample First Frame
 
