@@ -65,7 +65,7 @@ Store all frames in XBM format. These will be cut / pasted into a .h file for th
 
 Start a new arduino sketch.  If not already installed, use library manager to install the U8g2 library.  It is extremely well documented here:  https://github.com/olikraus/u8g2/wiki.
 
-The animation works by sequentially drawing each frame stored in program memory.  The AsyncDelay library is used to govern the rate at which the next frame is drawn.  Basically, when the AsyncDelay timer expires, it increments the frame number variable animation_state to draw the next sequential frame.  When the max or min frame is reached, the direction of presenting the frames is reversed.
+The animation works by sequentially drawing each frame stored in program memory.  The AsyncDelay library is used to govern the rate at which the next frame is drawn.  When the AsyncDelay timer expires, the if statement is triggered to increment the frame number variable (animation_state) used in the switch case statment to draw the next sequential frame.  When the max or min frame is reached, the direction of presenting the frames is reversed.
 
 The frames are put into program memory by storing the XBM files for each frame into a matrix.  The 0 index element is the first frame, 1 index is the second frame and so on.
 
@@ -78,13 +78,13 @@ In Arduino, create a new tab for the .h file.  Create the matrix framework.  Thi
 static unsigned char PROGMEM
  blinkImg[][128] = {
  {
-   <frame 0 XBM Hex data here>
+   <frame0 XBM Hex data here>
  },
  {
-   <frame 1 XBM Hex data here>
+   <frame1 XBM Hex data here>
  },
  {
-   <frame 2 XBM Hex data here>
+   <frame2 XBM Hex data here>
  }
  };
  ```
@@ -137,7 +137,9 @@ static unsigned char PROGMEM
    } 
   };
 ```
+## Summary
 
+The U8g2 library provides a very convenient way to draw XBM files to an OLED.  This example shows a basic and easy to understand method to draw sequential frames quickly enough to generate a nice animation effect.
 
 
 
