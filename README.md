@@ -88,7 +88,7 @@ static unsigned char PROGMEM
   }
  };
  ```
-Cut paste just the hex data from each of the XBM files.  Notepad++ is great for this since all frames can be opened on separate tabs to help avoide getting them mixed up. When complete, it will look something like this:
+Cut paste just the hex data from each of the XBM files.  Notepad++ is great for this since all frames can be opened on separate tabs to help avoid mixing them up. When complete, it will look something like this:
 
 ```c++
 #define frames_width 32
