@@ -41,7 +41,9 @@ For this project, three frames were enough.  Each frame incrementally changes to
 
 ### Export to XBM format
 
-Use File / Export As / Select File Type (by Extension) / X Bitmap Image.  Accept the defaults and click Export.  
+Use File / Export As / Select File Type (by Extension) / X Bitmap Image.  Accept the defaults and click Export. Open the saved XBM.  It should look something like this:
+
+
 
 
 
