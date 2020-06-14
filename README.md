@@ -63,6 +63,8 @@ Store all frames in XBM format. These will be cut / pasted into a .h file for th
 
 ## Code
 
+Start a new arduino sketch.  If not already installed, use library manager to install the U8g2 library.  It is extremely well documented here:  https://github.com/olikraus/u8g2/wiki.
+
 
 
 
