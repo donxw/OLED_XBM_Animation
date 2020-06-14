@@ -11,7 +11,7 @@ This project documents how to do a very basic animation on using an arduino comp
 
 This example is heavily leveraged from this site:  https://www.hackster.io/138689/pixel-art-on-oled-display-7f8697#code - Go there for in depth explanations.
 
-Changes made are to accomdate using GIMP and to use a matrix to hold all frames.
+GIMP was used to create the images and export to XBM.
 
 ## Making the animation frame images
 GIMP has very good support for XBM file reading and writing.  It is also very will supported with tutorials which can be found with a quick web search.  
