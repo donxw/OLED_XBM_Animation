@@ -77,15 +77,15 @@ In Arduino, create a new tab for the .h file.  Create the matrix framework.  Thi
 
 static unsigned char PROGMEM
  blinkImg[][128] = {
- {
+  {
    <frame0 XBM Hex data here>
- },
- {
+  },
+  {
    <frame1 XBM Hex data here>
- },
- {
+  },
+  {
    <frame2 XBM Hex data here>
- }
+  }
  };
  ```
 Cut paste just the hex data from each of the XBM files.  Notepad++ is great for this since all frames can be opened on separate tabs to help avoide getting them mixed up. When complete, it will look something like this:
