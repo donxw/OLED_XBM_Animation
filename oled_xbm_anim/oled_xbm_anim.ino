@@ -2,6 +2,9 @@
    OLED Animation Example
    Modified from code posted at:  https://www.hackster.io/138689/pixel-art-on-oled-display-7f8697#code
    GIMP used to create XBM files in frames.h
+   
+   This code is for educational and hobby purposes only.
+   
    boards tested:  
       NodeMCU 1.0 for Heltec wifikit8 
       Heltec Wifi Kit 32
