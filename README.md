@@ -139,7 +139,7 @@ static unsigned char PROGMEM
 ```
 ## Summary
 
-The U8g2 library provides a very convenient way to draw XBM files to an OLED.  This example shows a basic and easy to understand method to draw sequential frames quickly enough to generate a nice animation effect.
+The U8g2 library provides a very convenient way to draw XBM files to an OLED.  This example shows a basic and easy way to draw sequential frames quickly enough to generate a nice animation effect.  The animation would be better if the blinks were random and the eyes also moved randomly.  That will be a future project.
 
 
 
