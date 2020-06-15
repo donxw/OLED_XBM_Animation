@@ -2,7 +2,7 @@
    OLED Animation Example
    Modified from code posted at:  https://www.hackster.io/138689/pixel-art-on-oled-display-7f8697#code
    GIMP used to create XBM files in frames.h
-   Board:  NodeMCU 1.0
+   board:  NodeMCU 1.0
 */
 
 #include <Wire.h> //I2C
@@ -11,6 +11,7 @@
 #include "frames.h"
 
 AsyncDelay tick;
+
 //U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
 U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ 16, /* clock=*/ 5, /* data=*/ 4);  //heltek wifikit8
 //U8G2_SSD1306_128X64_NONAME_1_SW_I2C u8g2(U8G2_R0, /* clock=*/ 15, /* data=*/ 4, /* reset=*/ 16);  //heltec wifikit32 page mode
@@ -19,7 +20,7 @@ U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ 16, /* clock=*/
 
 const int AnimationDelay = 400; // larger delay = slower frame animation
 bool animation_direction = false;
-int animation_state = 0;
+int current_frame = 0;
 
 void setup() {
   u8g2.begin();
@@ -30,16 +31,16 @@ void loop() {
   if (tick.isExpired()) {
     drawAnimation();
     if (animation_direction) {
-      animation_state--;
+      current_frame--;
     } else {
-      animation_state++;
+      current_frame++;
     }
 
-    if (animation_state == 2) {
+    if (current_frame == 2) {
       animation_direction = true;
     }
 
-    if (animation_state == 0) {
+    if (current_frame == 0) {
       animation_direction = false;
     }
     tick.repeat();
@@ -49,7 +50,7 @@ void loop() {
 void drawAnimation() {
   u8g2.firstPage();
   do {
-    switch (animation_state) {
+    switch (current_frame) {
       case 0:
         //u8g2.drawXBMP(0, 0, frames_width, frames_height, testXbm0_bits);
         u8g2.drawXBMP(0, 0, frames_width, frames_height, blinkImg[0]);
