@@ -1,5 +1,6 @@
 # OLED_XBM_Animation
 Basic example to animate images on an OLED screen using an Arduino compatible board
+![IMG_0974 (Phone)](https://user-images.githubusercontent.com/31633408/84688713-a911f100-aef4-11ea-8b38-801147ee9dca.JPEG)
 
 ## Parts
 * Heltec WifiKit8 with build in OLED
