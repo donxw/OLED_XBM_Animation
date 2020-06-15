@@ -2,6 +2,7 @@
    OLED Animation Example
    Modified from code posted at:  https://www.hackster.io/138689/pixel-art-on-oled-display-7f8697#code
    GIMP used to create XBM files in frames.h
+   Board:  NodeMCU 1.0
 */
 
 #include <Wire.h> //I2C
