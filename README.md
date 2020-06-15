@@ -33,7 +33,7 @@ Create a pixel drawing as a first frame.  To create the second frame start a new
 
 ### Sample First Frame
 
-![FirstFrame (Small)](https://user-images.githubusercontent.com/31633408/84603493-bb802200-ae43-11ea-8c71-32afef912d5a.png)
+![FirstFrame (Small)](https://user-images.githubusercontent.com/31633408/84603493-bb802200-ae43-11ea-8c71-32afef912d5a.png | =100x100)
 
 For this project, three frames were enough.  Each frame incrementally changes to look like a blink.
 
