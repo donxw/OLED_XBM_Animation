@@ -7,7 +7,7 @@ Basic example to animate images on an OLED screen using an Arduino compatible bo
 * GIMP drawing software
 * Notepad++
 
-## Abstract
+## Overview
 This project documents how to do a very basic animation on using an arduino compatible board and and OLED screen.  It describes how to set up GIMP for pixel art, exporting to an XBM file into a matrix and then how to use the XBM display capability of the U8g2 library.
 
 This example builds on code from this site:  https://www.hackster.io/138689/pixel-art-on-oled-display-7f8697#code - Go there for in depth explanations.  The modifications are mostly in using a single matrix with all frames instead of inividual variables for each frame.  This was done to simplify later more complex animation to come.  Also, GIMP was used instead of Krita to create the images and export to XBM.
