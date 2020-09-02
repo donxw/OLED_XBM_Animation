@@ -140,7 +140,19 @@ static unsigned char PROGMEM
 
 The U8g2 library provides a very convenient way to draw XBM files to an OLED.  This example shows a basic and easy way to draw sequential frames quickly enough to generate a nice animation effect.  The animation would be better if the blinks were random and the eyes also moved randomly.  That will be a future project.
 
+   Copyright [2020] [Don Williams]
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 
 
 
